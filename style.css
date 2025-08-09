@@ -1,9 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  height: 100vh;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 :root {
@@ -14,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .background {
   position: absolute;
@@ -21,21 +24,23 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  height: 400px;
+  height: 435px;
   background-color: var(--mainColor);
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
 }
 .imgCont {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 350px;
   display: inline-block;
-  max-width: 300px;
+  max-width: 310px;
   box-shadow: 0 0 10px;
 }
 .personalImg {
   width: 100%;
-  height: 320px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .image-text {
   position: absolute;
@@ -51,7 +56,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 40px;
   width: 100%;
   max-width: 800px;
   padding-top: 40px;
@@ -93,4 +98,56 @@ a > i {
 }
 a > i:hover {
   transform: scale(1.4);
+}
+
+.cont2{
+    width: 70%;
+}
+
+.title2{
+    font-size: 30px;
+    color: var(--mainColor);
+    align-self: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gridCont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.card{
+    width: 100%;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.imgProjects{
+  width: 100%;
+  height: 270px;
+}
+.imgProjects > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.details{
+  padding-left: 10px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > p {
+  font-size: 20px;
+  color: var(--mainColor);
+  font-weight: 500;
+}
+.container > .icons{
+  padding-right: 20px;
+}
+.text{
+  padding: 5px;
 }
