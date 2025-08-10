@@ -72,38 +72,7 @@ body {
   max-width: 600px;
   min-width: 230px;
 }
-@media (max-width: 550px) {
-  .personalImg {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
 
-  .content {
-    flex-direction: column;
-     align-items: center; 
-     gap: 100px;
-  }
-  .aboutMe{
-    box-shadow: none;
-  }
-  .title{
-    text-align: center;
-  }
-  .links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .title2 {
-    text-align: center;
-  }
-
-
- 
-}
 .title {
   font-size: 30px;
   color: var(--mainColor);
@@ -123,7 +92,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: var(--mainColor);
+  color: black;
 }
 a > i {
   transition: transform 0.25s ease-in-out;
@@ -239,6 +208,16 @@ a > i:hover {
   .containerDisplay > p {
     font-size: 14px;
   }
+  .contactDetails{
+    padding: 20px;
+  }
+  .links3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
 }
 
 
@@ -297,4 +276,36 @@ a > i:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media (max-width: 600px) {
+  .personalImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .content {
+    flex-direction: column;
+     align-items: center; 
+     gap: 100px;
+  }
+  .aboutMe{
+    box-shadow: none;
+  }
+  .title{
+    text-align: center;
+  }
+  .links{
+    justify-content: center;
+    align-items: center;
+  }
+  .title2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* tablet styles */
 }
