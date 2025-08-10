@@ -43,6 +43,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  margin-bottom: 0;
 }
 .image-text {
   position: absolute;
@@ -101,6 +102,75 @@ a > i {
 }
 a > i:hover {
   transform: scale(1.4);
+}
+@media (max-width: 600px) {
+  .personalImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .aboutMe {
+    box-shadow: none;
+  }
+  .title {
+    text-align: center;
+  }
+  .links {
+    justify-content: center;
+    align-items: center;
+  }
+  .title2 {
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 850px) {
+  
+  .content {
+    margin-left: 80px;
+    display: block !important;
+    position: relative;
+    margin-top: 20px;
+    min-width: 500px;
+  }
+
+  .imgCont {
+    left: -10%;
+    max-width: 300px;
+    z-index: 10;
+    float: left;
+  }
+  .personalImg {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+  }
+  .image-text {
+    position: absolute;
+    top: 30px;
+    left: 103%;
+    white-space: nowrap;
+  }
+
+  .aboutMe {
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    top: 80px;
+  }
+  .cont2 {
+    margin-top: 20px;
+  }
+  .cont4{
+    display: none;
+  }
 }
 
 .cont2 {
@@ -208,61 +278,54 @@ a > i:hover {
   .containerDisplay > p {
     font-size: 14px;
   }
-  .contactDetails{
+  .contactDetails {
     padding: 20px;
   }
-  .links3{
+  .links3 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
-
 }
 
-
-.cont4 > a >img{
+.cont4 > a > img {
   width: 150px;
   position: absolute;
   top: 25%;
   left: 10%;
-  
- 
 }
-.cont4{
-   align-self: flex-start;
-   margin-left: 150px;
-   position: absolute;
-   background-color: white;
-   top: 26%;
-   left: 60%;
-  animation: 3s show infinite  alternate;
-  
+.cont4 {
+  align-self: flex-start;
+  margin-left: 150px;
+  position: absolute;
+  background-color: white;
+  top: 26%;
+  left: 60%;
+  animation: 3s show infinite alternate;
 }
 @media (max-width: 1340px) {
-  .cont4{
+  .cont4 {
     top: 20%;
   }
 }
 @media (max-width: 1000px) {
-  .cont4{
+  .cont4 {
     top: 20%;
     left: 60%;
   }
 }
 @media (max-width: 850px) {
-  .cont4{
+  .cont4 {
     left: 50%;
   }
 }
 
-
 @media (max-width: 720px) {
-  .cont4{
+  .cont4 {
     display: none;
   }
 }
-
 
 @keyframes show {
   0% {
@@ -276,36 +339,4 @@ a > i:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-@media (max-width: 600px) {
-  .personalImg {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
-
-  .content {
-    flex-direction: column;
-     align-items: center; 
-     gap: 100px;
-  }
-  .aboutMe{
-    box-shadow: none;
-  }
-  .title{
-    text-align: center;
-  }
-  .links{
-    justify-content: center;
-    align-items: center;
-  }
-  .title2 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  /* tablet styles */
 }
