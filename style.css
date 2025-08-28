@@ -8,10 +8,12 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: var(--secondaryColor);
 }
 
 :root {
   --mainColor: rgb(116, 28, 44);
+  --secondaryColor: #f1f1f1;
 }
 .cont1 {
   position: relative;
@@ -196,10 +198,11 @@ a > i:hover {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  border: solid gray;
+  border: 1px solid rgba(128, 128, 128, 0.196);
   opacity: 0; 
   transform: translateY(20px); 
   transition: opacity 1s ease, transform 1s ease;
+  background-color: white;
   
 }
 .card.show:hover {
