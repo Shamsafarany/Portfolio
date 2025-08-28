@@ -194,21 +194,21 @@ a > i:hover {
 
 .card {
   width: 100%;
-  box-shadow: 4px 4px 4px #8080809f;
+  box-shadow: 0 0 10px #8080809f;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   border: 1px solid rgba(128, 128, 128, 0.196);
   opacity: 0; 
   transform: translateY(20px); 
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1.5s ease, transform 1s ease, box-shadow 1s ease;
   background-color: white;
   
 }
 .card.show:hover {
-  transform: translateY(0) scale(1.1);
-  box-shadow: 4px 4px 4px rgba(116, 28, 44, 0.526);
-  border: solid var(--mainColor);
+  transform: translateY(0) scale(1.07);
+  box-shadow: 2px 2px 30px rgba(116, 28, 44, 0.526);
+
 }
 .card.show{
   opacity: 1;
